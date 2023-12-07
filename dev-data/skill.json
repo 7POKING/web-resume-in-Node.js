@@ -1,0 +1,35 @@
+[
+  { 
+    "herf": "biotechSkill",
+    "skillimage": "icon fas fa-light fa-dna fa-4x",
+    "skillname": "Biotechnology",
+    "tip": "Master of Science in Biotchnology. Specialization in Recombinant protein production <i class='fa-solid fa-vials'></i> and Animal experiment <i class='fa-solid fa-shrimp'></i> . ",
+    "description": "PASS",
+    "featrue":{
+        "feaImage": "PASS",
+        "feaTitle": "PASS",
+        "feadescription": "PASS"
+    }
+  },
+  {
+    "herf": "progSkill",
+    "skillimage": "icon fas fa-light fa-code fa-4x",
+    "skillname": "Programmer",
+    "tip": "Use Python <i class='fa-brands fa-python'></i>, JavaScript <i class='fa-brands fa-js'></i> and Node.js <i class='fa-brands fa-node-js'></i> in full-stack and Data Science.",
+    "description": "PASS"
+  },
+  {
+    "herf": "mfg_engSkill",
+    "skillimage": "icon fas fa-thin fa-industry fa-4x",
+    "skillname": "Manufacture Engineering",
+    "tip": "Improving the production process and efficiency <i class='fa-solid fa-glasses'></i> .",
+    "description": "PASS"
+  },
+  {
+    "herf": "3DprintSkill",
+    "skillimage": "icon fas fa-solid fa-cubes fa-4x",
+    "skillname": "Hight-End 3Dprinter",
+    "tip": "Have EOS and SISMA Certificate <i class='fa-solid fa-layer-group'></i> , and amountly assist in sales promotion, installation and education training.",
+    "description": "PASS"
+  }
+]

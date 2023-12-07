@@ -1,0 +1,184 @@
+
+  {
+    "biotechSkillimage":"https://d1g9yur4m4naub.cloudfront.net/images/Article_Images/ImageForArticle_912_166126351050995.jpg",
+    "biotechSkillcompetence": "🌟🌟🌟🌟🌟",
+    "biotechSkill": {
+      "feature": {
+        "feaImage": "https://i.gifer.com/6Dg.gif",
+        "feaTitle": "Genetic Engineering",
+        "feaTitlemuted":"",
+        "feadescription": "Proficient in relevant genetic engineering techniques, including PCR, RT-PCR, Q-PCR. In the research of master's thesis, recombinant proteins (rCHH1 and rCHH1-L) were produced by an E. coil expression system, and attempt to increases rCHH1 and rCHH1-L yields by decreases amount of rare codons, change either mRNA stability.",
+        "featureIcon":" <path d=\"M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z\"/> <path d=\"M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z\"/>"
+      },
+      "feature2": {
+        "feaImage": "https://bio.libretexts.org/@api/deki/files/63585/bacterial_transformation_gif.gif?revision=1&size=bestfit&width=702&height=425",
+        "feaTitle": "Recombinant Proteins",
+        "feaTitlemuted":"It’ll blow your mind." ,
+        "feadescription": "The recombinant protein sexpression with pelB-leader protein or decreases amount of rare codons, that can increase the rCHH1 and rCHH1-L yields, respectively. And then refolded, purified, and confirmed by western blotting and mass spectrometric analyses. In addition, Circular dichromatic spectra of rCHH1 and rCHH1-L indicate they are rich in α-helixes (30.5 % and 41 %, respectively).",
+        "featureIcon":""
+      },
+      "feature3": {
+        "feaImage": "https://www.sielc.com/wp-content/uploads/2020/10/Autosampler_Schematic.gif",
+        "feaTitle": "Analytical technique",
+        "feaTitlemuted":"" ,
+        "feadescription": 
+        "Proficient in utilizing various techniques including HPLC, SDS-PAGE, Western blot, ELISA, and sample preparation for LC to conduct protein structure identification and characterization. In the research of master's thesis, purified, and confirmed by western blotting and mass spectrometric analyses. In addition, Circular dichromatic spectra of rCHH1 and rCHH1-L indicate they are rich in α-helixes (30.5 % and 41 %, respectively). Purifying rCHH1 was C-terminally amidated (rCHH1amide) in accordance with native counterpart.",
+        "featureIcon":""
+      },
+      "feature4": {
+        "feaImage": "https://nebula.wsimg.com/0d8a8382ac2bc923efc95d0915bb87aa?AccessKeyId=F8D69DCE42B4D414F84F&disposition=0&alloworigin=1",
+        "feaTitle": "Experimenting on animals",
+        "feaTitlemuted":"" ,
+        "feadescription": 
+        "Conducted experiments on the administration of recombinant protein injections and challenge tests with WSSV virus for my graduate thesis. Additionally, during my tenure at TFDA, I was responsible for tasks such as inspecting biopharmaceuticals (vaccines or blood products) and reviewing biopharmaceuticals. Executed biological product and animal experiments, including pyrogen tests and techniques such as subcutaneous, intraperitoneal, intracranial injections, or dissections in guinea pigs and mice.",
+        "featureIcon":""
+      },
+      "feature5": {
+        "feaImage": "https://images.squarespace-cdn.com/content/v1/5f19c9dd1e5161508c769524/88890e2d-9473-46e1-91eb-e97c099f48d5/Phase_graphic_2_reformat.gif?format=1500w",
+        "feaTitle": "Fermentation Processs",
+        "feaTitlemuted":"" ,
+        "feadescription": 
+        "In college research project, the topic involved the fermentation tank production of curdlan using Agrobacterium sp. strains and the exploration of purification factors. This encompassed bacterial culture screening, fermentation tank operations, nitrogen content, polysaccharide content analysis, and the utilization of fermentation for the production of curdlan gum. I have practical experience in the preparation, analysis, and small-scale production of curdlan gum as a food additive.",
+        "featureIcon":""
+      }
+    },
+
+
+    "progSkillimage":"https://camo.githubusercontent.com/045e3d807cc00f35001984ed251551e0238332edf1134f2c66a4b2c008234ed6/68747470733a2f2f696d672e6574696d672e636f6d2f7468756d622f6d7369642d38343134363038332c77696474682d313031352c6865696768742d3736312c696d6773697a652d3633383035332c726573697a656d6f64652d382f7072696d652f746563686e6f6c6f67792d616e642d73746172747570732f626f6f74696e672d75702d646576656c6f7065722d65636f6e6f6d792d686f772d746563682d73746172747570732d6172652d68656c70696e672d636f646572732d6275696c642d616e642d746573742d736f6674776172652d6661737465722e6a7067",
+    "progSkillcompetence": "🌟🌟🌟",
+    "progSkill": {
+      "feature": {
+        "feaImage": "data:image/png;base64,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",
+        "feaTitle": "Excel VBA",
+        "feaTitlemuted":"",
+        "feadescription": "In my current role, I leverage Excel VBA programming to assist in production operations. This includes developing userform programs for relevant applications such as yield and production efficiency reports, as well as data comparison during operations. These programs effectively reduce repetitive manual tasks and facilitate data analysis.",
+        "featureIcon":""
+      },
+      "feature2": {
+        "feaImage": "https://i.pinimg.com/originals/ca/00/60/ca0060f3414e6e20b75983acddafad53.gif",
+        "feaTitle": "Python",
+        "feaTitlemuted":"",
+        "feadescription": 
+        "Self-taught in Python, I have acquired proficiency in applying high-level programming languages. My skills include developing GUI interfaces, utilizing APIs, conducting data analysis, and working with databases. Drawing from my current production experience, I am actively engaged in developing practical applications that meet specific needs.",
+        "featureIcon":""
+      },
+      "feature3": {
+        "feaImage": "https://miro.medium.com/v2/resize:fit:3200/format:webp/1*i8-u-V8LTTbQwTeUwLI_BQ.gif",
+        "feaTitle": "JavaScript",
+        "feaTitlemuted":"",
+        "feadescription":
+        "Currently immersed in learning and developing games and related applications using JavaScript, I am actively accumulating experience and building a portfolio of projects. This hands-on approach not only strengthens my proficiency in JavaScript but also allows me to showcase my creativity and problem-solving skills through tangible works. I am excited about the continuous growth of my skills and the opportunity to contribute to innovative projects in the realm of game development.",
+        "featureIcon":""
+      },
+      "feature4": {
+        "feaImage": "https://miro.medium.com/v2/resize:fit:1000/1*LGNLwf-3dknhu1mMalKDJQ.gif",
+        "feaTitle": "Node.js",
+        "feaTitlemuted":"",
+        "feadescription": "Actively advancing my skills in Node.js, I am committed to becoming a proficient full-stack developer. My current project, your present viewing, is a testament to this dedication as it is meticulously crafted using Node.js. This initiative not only highlights the versatility of Node.js but also underscores my ambition to evolve into a well-rounded and skilled full-stack developer. In pursuit of excellence, I am actively enrolled in the Node.js Application Development (LFW211) and the Node.js Services Development (LFW212) certifications, solidifying my commitment to continuous learning and professional development.",
+        "featureIcon":""
+      },
+      "feature5": {
+        "feaImage": "https://miro.medium.com/v2/resize:fit:679/1*UOcMh43IDlvj6_cXkETQ4Q.gif",
+        "feaTitle": "React.js",
+        "feaTitlemuted":"",
+        "feadescription": 
+        "Embarking on the journey to master React.js, my motivation is rooted in its transformative impact on user interface development. Recognized as a leading library for building engaging and dynamic front-end experiences, learning React.js aligns with my passion for creating intuitive and seamless user interfaces. This pursuit is driven by the desire to excel in front-end development, crafting visually appealing and highly responsive applications. I am eager to harness the power of React.js to deliver innovative and user-centric digital experiences, thereby expanding my expertise in modern web development.",
+        "featureIcon":""
+      }
+    },
+
+    "mfg_engSkillimage":"https://www.sage.com/en-gb/blog/wp-content/uploads/sites/10/2018/10/sage-funding-for-manufacturing.gif",
+    "mfg_engSkillcompetence": "🌟🌟🌟🌟🌟",
+    "mfg_engSkill": {
+      "feature": {
+        "feaImage": "https://imgsthe.thesharpener.net/1664176982848.jpg",
+        "feaTitle": "Production Scheduling and Planning",
+        "feaTitlemuted":"",
+        "feadescription": "Proficient in orchestrating production schedules, I excel in optimizing manufacturing processes to achieve peak operational efficiency. My expertise lies in strategically adjusting production schedules, ensuring timely delivery while maintaining the highest standards of efficiency. By meticulously planning and managing production timelines, I have consistently contributed to meeting and exceeding production targets. This skill set not only underscores my commitment to operational excellence but also showcases my ability to balance precision with productivity, crucial for ensuring on-time delivery in a dynamic manufacturing environment.",
+        "featureIcon":""
+      },
+      "feature2": {
+        "feaImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAjotPPi39dJx21o5s9Vq5DUJdRU2tFAEXQ&usqp=CAU",
+        "feaTitle": "Enhancement of Production Yield",
+        "feaTitlemuted":"",
+        "feadescription": 
+        "Specializing in process optimization to elevate production quality, I have a proven track record of significantly improving product yield and reducing customer complaints through my experiences.",
+        "featureIcon":""
+      },
+      "feature3": {
+        "feaImage": "https://vertassets.blob.core.windows.net/image/2bfe3e5a/2bfe3e5a-d874-4b7a-a09d-77c3caec686f/bridge_to_efficiency.jpg",
+        "feaTitle": "Enhancement of Production Efficiency",
+        "feaTitlemuted":"",
+        "feadescription": 
+        "In my current position, I specialize in strategically boosting production efficiency, optimizing workflow, and have hands-on experience in increasing operational capacity.",
+        "featureIcon":""
+      },
+      "feature4": {
+        "feaImage": "https://kinexon.com/uploads/images/Industries/03_02_Tool-Control_Traceability_Final.gif",
+        "feaTitle": "Production Record Document Management",
+        "feaTitlemuted":"",
+        "feadescription": 
+        "Led the paperless transformation of production process documentation, ensuring compliance with ISO9001, ISO13485, and GMP standards. Designed and implemented program-controlled logic to facilitate comprehensive and traceable production data.",
+        "featureIcon":""
+      },
+      "feature5": {
+        "feaImage": "https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/12/27151547/iStock-1189916627.jpg",
+        "feaTitle": "Project Coordination",
+        "feaTitlemuted":"",
+        "feadescription": 
+        "Demonstrated adeptness in cross-departmental collaboration, adeptly executing improvement projects. Offers a wealth of experience in project leadership, particularly from a production and manufacturing standpoint, coupled with specialized expertise.",
+        "featureIcon":""
+      },
+      "feature6": {
+        "feaImage": "https://www.mddionline.com/sites/mddionline.com/files/image001_18.jpg",
+        "feaTitle": "Practical Experience in Medical Device Manufacturing",
+        "feaTitlemuted":"",
+        "feadescription": "Proficient in production line management and operational control, backed by practical experience. Ensures optimal configuration in terms of capacity, quality, materials, and workforce to maximize efficiency.",
+        "featureIcon":""
+      }
+    },
+ 
+    "3DprintSkillimage":"https://www.sculpteo.com/blog/wp-content/uploads/2016/08/SLA-Formlabs-compressed.gif",
+    "3DprintSkillcompetence": "🌟🌟🌟🌟",
+    "3DprintSkill": {
+      "feature": {
+        "feaImage": "https://na.eos.info/products/plastic%20platforms/formiga%20png.png",
+        "feaTitle": "EOS P110",
+        "feaTitlemuted":"",
+        "feadescription": "Holds EOS P110(Selective Laser Sintering(SLS) printing technology 3D printers) operation training certification with extensive hands-on experience. Facilitated the establishment of 3D printing production outsourcing samples and design processes for the company. Additionally, received training directly from the EOS headquarters in Germany in 2017, covering operational aspects, basic maintenance, and sales. Enhanced by a proven track record in promoting and selling 3D printing solutions.",
+        "featureIcon":""
+      },
+      "feature2": {
+        "feaImage": "https://www.empa.ch/documents/147354/601833/Sisma_570px.jpg/7fb612b4-871f-476f-b4fc-137a76cb876a?t=1534340480060",
+        "feaTitle": "SISMA Mysint100",
+        "feaTitlemuted":"It’ll blow your mind.",
+        "feadescription": 
+        "Holds certification in installation, basic maintenance, and operation of SISMA MySint100(Selective Laser Melting(SLM) printing technology 3D printers). Possesses practical experience in metal crown outsourcing production. Offers expertise in mold optimization and provides 3D printing outsourcing services for stainless steel or titanium metal samples, along with technical consulting for clients. Additionally, conducts education and training services for clients in the Taiwan region.",
+        "featureIcon":""
+      },
+      "feature3": {
+        "feaImage": "https://www.dwssystems.com/FILES/images/020D_001.jpg",
+        "feaTitle": "DWS 020D & 029D",
+        "feaTitlemuted":"",
+        "feadescription": "Utilized DWS 020D and 029D (Stereolithography(SLA) printing technology 3D printers) in conjunction with the Simplant implant surgical guide planning software from Dentsply Sirona. Assisted clients in designing dental surgical guides, establishing related medical device design, manufacturing, and quality control processes. Contributed to the company's achievement of ISO13485, ISO9001, and GMP certifications. Leveraged high-precision technology to assist clients in producing fine samples.",
+        "featureIcon":""
+      },
+      "feature4": {
+        "feaImage": "https://production-to-go.com/media/production-to-go.com/pages/hersteller/materialise/magics/uebersicht/b258574a6b-1667900292/materialise-magics-1200x900px.png",
+        "feaTitle": "Professional 3D Printing Software",
+        "feaTitlemuted":"",
+        "feadescription": "Utilized CAD and CAM software for 3D printing, such as Materialise Magics, to assist clients in producing small-batch products and prototype samples. Established the company's outsourcing quotation and production processes for prototyping.",
+        "featureIcon":""
+      },
+      "feature5": {
+        "feaImage": "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit/Untitled_xwagvg.jpg",
+        "feaTitle": "Developed Quality Standards for Samples and Medical Devices",
+        "feaTitlemuted":"",
+        "feadescription": "Established quality control and measurement standards for samples and medical device products, aiding the company in meeting client requirements for outsourcing and medical equipment manufacturing.",
+        "featureIcon":""
+      }
+    }
+ 
+  }
+
+

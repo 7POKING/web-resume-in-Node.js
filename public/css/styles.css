@@ -1,0 +1,640 @@
+/* Cascading CSS */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+/* mini challenge 把所有的字都變成Montserrat-Black*/
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+P {
+  /* parafraph element 改變顏色 */
+  font-family: "Montserrat";
+  color: #8f8f8f;
+  /* font-size; */
+}
+
+a{
+    text-decoration:none;
+}
+
+/* 設定字型  */
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* title section */
+/* containers */
+/*  讓在container 裡的內容，隨著瀏覽工具不同，可自動變更大小  container_fluid 讓內容持續維持100%*/
+/* https://getbootstrap.com/docs/5.1/layout/containers/#fluid-containers */
+.container_fluid {
+  padding: 0% 15%;
+  /* display:flex; */
+}
+
+/* Sections */
+/* 影片 72 解釋CSS定義 https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12288154#content*/
+/* #title => ID .colored-section=> class */
+.colored-section {
+  /* padding-top: 5vw; */
+  background-color: #394867;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #F1F6F9;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #d9f25f, #b0ef72);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.big-heading {
+  /* 字型 從google font得到 CDN */
+  font-family: 'Montserrat';
+  /* 字體大小 */
+  font-size: 5rem;
+  /* 行間距 */
+  line-height: 1.5;
+  /* 調整字體寬度 */
+  font-weight: 600;
+  /* 調整border-box 百分比，讓他比container 超出20% */
+  width: 120%;
+  /* color: white; */
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* ----------------------------------------------------- */
+/* Style the navbar */
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.for_navbar_padding{
+  padding-top: 5rem ;
+}
+
+
+
+#navbar-title {
+  /* background-color: #333;  */
+  /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; 
+  /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 100 ;
+}
+
+
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* #navbar a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* ----------------------------------------------------- */
+
+
+/* Navigation Bar  調整 Navbar大小 */
+/* .navbar {
+  padding: 0 0 4.5rem;
+} */
+
+.navbar-brand {
+  font-family: 'Montserrat';
+  font-size: 5rem;
+  font-weight: bold;
+  /* padding: 10.0%; */
+}
+
+/* 項目間距離變大 */
+.nav-item {
+  padding: 0 18px;
+}
+
+/* 字體看起來比較大一點 */
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  color: white;
+}
+
+/* 調整下載按鈕 上 右 左 下 */
+.download-button {
+  /* margin: 5% auto; 可以將圖放在中央，但變畫面大小，自動調整的功能會失效 */
+  margin: 5% 3% 5% 0%;
+  padding: 0.5rem 2rem;
+  /*  */
+  /* width: 15rem; 調整按鈕為固定大小 */
+}
+
+#title {
+  text-align: left;
+  /* padding: 2% 10%; */
+}
+
+/* 用hierarchical selectors所以有空格 */
+/* 只有id為title 並且 class為container_fluid 才會執行 */
+#title .container_fluid {
+  padding: 1px;
+}
+
+/*  只有id為blog 並且class為blogtitle 才會執行*/
+#blog .blogtitle{
+  color: green;
+}
+
+#blog .container_fluid{
+
+}
+
+
+/* Title Image 大頭照 */
+/* 縮小圖案為60% */
+.title-image {
+  /* 如果 width: 15%; 不會隨畫面縮放變更大小 要改成 rem*/
+  width: 17rem;
+  /* transform: rotate(25deg); */
+  /* position: absolute; */
+  /* top: 200px; */
+  /* 向右靠齊的量 */
+  /* right: 15% */
+}
+
+/* section features */
+#features {
+  /* padding: 2% 20%; */
+  /* position: relative; */
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.feature-box {
+  /* 字置中對齊 */
+  text-align: center;
+  /* 設定字的內容的邊邊大小，可以控制字靠中集中，但一定要在text-align以下才會生效 */
+  padding: 2%;
+}
+
+/* 圖標的顏色 */
+.icon {
+  color: #FFD523;
+  /* 調整圖與字體間的 間距 */
+  margin-bottom: 1rem;
+}
+
+/* 滑鼠指向時，會變更底色 */
+.icon:hover {
+  color: #B2B1B9;
+}
+
+#testimonials {
+  /* 因為畫面高度會因為字數不同跳動，所以固定高度 !important解釋: https://getbootstrap.com/docs/5.0/utilities/api/#importance*/
+  /* utility API 可以變更預設値，但這裡好像不需要 */
+  /* max-height: 47rem !important; */
+  padding: 3% 3%;
+  background-color: #545454;
+}
+
+.testimonial-image {
+  width: 10%;
+  /* height: 10%; */
+  /* 將邊角變圓 */
+  border-radius: 1%;
+  margin: auto;
+}
+
+.carousel-item {
+  /* padding: 10% 15%; */
+  /* // height: 100px; */
+  flex: 0 0 100%
+}
+
+/* .carousel-control-prev .carousel-control-next {
+  max-height: 30rem;
+  padding: 1% 3%;
+} */
+
+
+
+/* 跑馬燈------------------------ */
+/* 自定義 Carousel 持續滾動效果 */
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  transition: transform 1s ease-in-out;
+}
+
+
+.testimonial-text {
+  color: #fff;
+  font-size: 170%;
+  /* font-size: 2.5rem; */
+  line-height: 1.5;
+}
+
+.link-button {
+  font-family: "Montserrat";
+  position: absolute;
+  bottom: 16%;
+  right: 15.5%;
+  width: auto;
+  font-size: auto;
+  /* margin-left: 90%;
+  padding-bottom: 10%; */
+}
+
+#press {
+  /* 底部空格 */
+  padding-bottom: 3%;
+  background-color: #545454;
+}
+
+.press-logo {
+  width: 15%;
+  /* 調整圖檔間的間隙 上面 左右 下面 */
+  margin: 20px 20px 50px;
+}
+
+/* articles Section */
+/* #articles {
+  padding: 100px;
+  text-align: center;
+} */
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.articles-column {
+  padding: 3% 2%;
+}
+
+.card-header {
+  background-color: #7FCD91;
+}
+
+.card-body {
+  /* 控制卡片內部的padding，注意 class 的區域空置內部文字 */
+  background: #F5EAEA;
+  padding: 20% 10%;
+}
+
+.collapse-card .card-body{
+  padding: 20% 10%;
+  box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 5rem;
+  transform: skewX(-20deg);
+  display: flex;
+  transition: all 0.5s;
+}
+
+.price-btn {
+  /* padding:100px */
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  /* background-color: #fff; */
+  /* width: auto; */
+  /* height: auto; */
+  border: 0px solid #f1f1f1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  /* position: relative; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* text-align: center; */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front {
+  /* 位置要設定正面為absolute 背面為relative 才會自動變更大小*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* margin: ; */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: blue; */
+  /* color: black; */
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.pac-man {
+  display: block;
+  vertical-align: top;
+  position: relative;
+  left: 20%;
+  width: 0px;
+  height: 0px;
+  border: 150px solid #FFD31D;
+  border-right: 150px solid transparent;
+  border-radius: 150px;
+}
+
+.circle-dot {
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 14%;
+  background: #FFD31D;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+
+/* .circle-dot-eye {
+  display: block;
+  position: relative;
+  bottom: 100%;
+  left: 45%;
+  background: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+} */
+/* ＣＴＡ section */
+
+/* #cta {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 3% 15%;
+  /* display:flex; */
+  /*} */
+
+/*
+與big-heading相同
+.cta-heading{
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5rem;
+} */
+/* Footer section */
+#footer {
+  background: #394867;
+  padding: 1% 5%;
+  /* line-height: 1.5rem; */
+}
+
+.social-icon {
+  color: #fff;
+  margin: 30px 10px;
+  padding: 0px 20px;
+}
+
+.social-icon:hover{
+  color: #36AE7C;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+}
+
+.p {
+  margin: 10%;
+  color: #8f8f8f;
+}
+
+/* 當瀏覽器 <= 1028px 執行 下列CSS內容變更 */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 50%;
+  }
+}
+
+/* 1360px >= media >= 768px */
+/* @media (max-width: 1136px) and (min-width: 768px) {
+  .testimonial-image{
+    margin-bottom: 70px;
+  }
+
+  .link-button{
+    margin-bottom:28px;
+  }
+} */
+@media (max-width: 1360px) {
+  .testimonial-image {
+    margin-bottom: 80px;
+  }
+
+  .link-button {
+    margin-bottom: 33px;
+  }
+
+  .testimonial-local-text, .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .download-button {
+    width: 14rem;
+    /* 調整按鈕為固定大小 */
+  }
+}
+
+@media (max-width: 768px) {
+  .pac-man {
+    display: block;
+    vertical-align: top;
+    position: relative;
+    left: 20%;
+    width: 0px;
+    height: 0px;
+    border: 150px solid #FFD31D;
+    border-bottom: 150px solid transparent;
+    border-radius: 150px;
+  }
+
+  .circle-dot {
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 5%;
+    background: #FFD31D;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+}
+
+/* 按鈕CSS */
+.BUTTON_BMI {
+  /* BMI頁面的計算按鈕 */
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #000000;
+   font-family: Open Sans;
+   font-size: 20px;
+   font-weight: 600;
+   padding: 8px;
+   background-color: #F6F63D;
+   -webkit-box-shadow: 1px 1px 20px 0 #FFFFFF;
+   -moz-box-shadow: 1px 1px 20px 0 #FFFFFF;
+   box-shadow: 1px 1px 20px 0 #FFFFFF;
+   text-shadow: 1px 1px 20px #FFFFFF;
+   border: solid #FFFFFF 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_BMI:hover {
+   border: outset rgba(30, 98, 208, 0.87) 0;
+   background: rgba(8, 246, 246, 0.94);
+   background-image: -webkit-linear-gradient(top, rgba(8, 246, 246, 0.94), rgba(30, 98, 208, 0.87));
+   background-image: -moz-linear-gradient(top, rgba(8, 246, 246, 0.94), rgba(30, 98, 208, 0.87));
+   background-image: -ms-linear-gradient(top, rgba(8, 246, 246, 0.94), rgba(30, 98, 208, 0.87));
+   background-image: -o-linear-gradient(top, rgba(8, 246, 246, 0.94), rgba(30, 98, 208, 0.87));
+   background-image: -webkit-gradient(to bottom, rgba(8, 246, 246, 0.94), rgba(30, 98, 208, 0.87));
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+
+/* Experience的 styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* body {
+  padding: 5rem 5rem 10rem;
+  line-height: 1.7;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #555;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+} */
+
+/* h1 {
+  font-family: 'Megrim', sans-serif;
+  font-size: 6rem;
+  color: white;
+  transform: skewY(-5deg);
+  text-align: center;
+  position: relative;
+  word-spacing: 3px;
+} */
+
+/* h1::before {
+  content: '';
+  display: block;
+  height: 65%;
+  width: 49%;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  background: linear-gradient(to bottom, #9be15d, #00e3ae);
+  opacity: 0.8;
+  z-index: -1;
+  transform: skewY(370deg) translate(-50%, -50%);
+} */
+

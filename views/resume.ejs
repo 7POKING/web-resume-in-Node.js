@@ -1,0 +1,843 @@
+<%- include("partials/header")%><!-- 用EJS套用layout -->
+  <!-- Title 標題---------------------------------------------------------------------------------------------------------------------------------------------->
+  <section class="gradient-background">
+    <div class="container p-5">
+
+      <div class="row">
+        <div class="col-lg-7">
+          <!-- 任何 ≥992px 的螢幕會分割成2塊，小於則分割成1塊 變成col-lg-8讓字變開 -->
+          <h1 class="big-heading">Hi! I'm <br> Yen Chou Chen</h1>
+          <h3 class="">A Production Engineer and Programmer.</h3>
+          <!-- 自動調整按鈕大小，當畫面小於md時 https://getbootstrap.com/docs/5.1/components/buttons/#block-buttons -->
+          <div class="d-grid gap-2 d-md-block">
+            <!-- btn 按鈕 btn-dark調整背景顏色 btn-lg 調整按鈕大小， icon 的加入fa-fw 可以將字與圖間有空格 -->
+            <a rel="nofollow noopener" target="_blank" href="/articles?"><button type="button" class="btn-dark btn-lg  download-button" rel="nofollow noopener" target="_blank" class="btn btn-secondary" href=""><i class="fa-solid fa-user-tie fa-fw"></i>
+              CV</button></a>
+            <!-- 更換為 CV 下載按鈕  翻轉動畫<i class="fa-solid fa-scroll fa-flip" style="--fa-flip-x: 1; --fa-flip-y: 0;" ></i>-->
+            <!-- pdf Icon <i class="fa-solid fa-file-pdf fa-beat-fade"></i> -->
+            <!-- <button type="button" class="btn-outline-dark btn-lg download-button"><i
+                class="fa-solid fa-download fa-beat-fade fa-fw"
+                style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i> Download</button> -->
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img class="title-image rounded-circle mx-auto d-block" src="http://localhost:7000/images/profile.png" alt="YCC photo">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--技能---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- 20230827套用 -->
+  <!-- Features -->
+  <!-- mini challenge -->
+  <section class="white-section" id="skills">
+    <div class="container">
+      <!-- 參考影片70  https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12288138#content -->
+      <!--class row 設定為1 row colum可以設定為 不同尺寸 Bootstrap 4, 5都是除12的大小 https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12288138#content-->
+      <div class="row">
+        <%-skillOverview %>
+      </div>
+    </div>
+  </section>
+
+  <!--技能標示跑馬燈------------------------------------------------------------------------------------------------------------------------------------ -->
+  <!-- 2023/09/26 Bootstrap Multi Slide Carousel -->
+  <!-- advances one slide at a time -->
+  <!-- https://www.codeply.com/p/0CWffz76Q9 -->
+  <section class="colored-section" id="carousel-slide">
+    <style>
+      @media (max-width: 767px) {
+        .carousel-inner .carousel-item>div {
+          display: none;
+        }
+  
+        .carousel-inner .carousel-item>div:first-child {
+          display: block;
+        }
+      }
+  
+      .carousel-inner .carousel-item.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-inner .carousel-item-prev {
+        display: flex;
+      }
+  
+      /* medium and up screens */
+      @media (min-width: 768px) {
+  
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(25%);
+        }
+  
+        .carousel-inner .carousel-item-start.active,
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-25%);
+        }
+      }
+  
+      .carousel-inner .carousel-item-end,
+      .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+      }
+    </style>
+    <!-- 外部 container，可以保持原有对齐功能 -->
+    <div class="container align-items-center">
+      <!-- 内部 container，用于限制轮播控制按钮的对齐 -->
+      <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+  
+            <!-- Excel -->
+            <div class="carousel-item active">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <rect x="8" y="2" width="24" height="28" rx="2" fill="#2FB776"></rect>
+                  <path d="M8 23H32V28C32 29.1046 31.1046 30 30 30H10C8.89543 30 8 29.1046 8 28V23Z"
+                    fill="url(#paint0_linear_87_7712)"></path>
+                  <rect x="20" y="16" width="12" height="7" fill="#229C5B"></rect>
+                  <rect x="20" y="9" width="12" height="7" fill="#27AE68"></rect>
+                  <path d="M8 4C8 2.89543 8.89543 2 10 2H20V9H8V4Z" fill="#1D854F"></path>
+                  <rect x="8" y="9" width="12" height="7" fill="#197B43"></rect>
+                  <rect x="8" y="16" width="12" height="7" fill="#1B5B38"></rect>
+                  <path
+                    d="M8 12C8 10.3431 9.34315 9 11 9H17C18.6569 9 20 10.3431 20 12V24C20 25.6569 18.6569 27 17 27H8V12Z"
+                    fill="#000000" fill-opacity="0.3"></path>
+                  <rect y="7" width="18" height="18" rx="2" fill="url(#paint1_linear_87_7712)"></rect>
+                  <path
+                    d="M13 21L10.1821 15.9L12.8763 11H10.677L9.01375 14.1286L7.37801 11H5.10997L7.81787 15.9L5 21H7.19931L8.97251 17.6857L10.732 21H13Z"
+                    fill="white"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_87_7712" x1="8" y1="26.5" x2="32" y2="26.5"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#163C27"></stop>
+                      <stop offset="1" stop-color="#2A6043"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_87_7712" x1="0" y1="16" x2="18" y2="16"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#185A30"></stop>
+                      <stop offset="1" stop-color="#176F3D"></stop>
+                    </linearGradient>
+                  </defs>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- word -->
+            <div class="carousel-item px-1">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <rect x="8" y="2" width="24" height="28" rx="2" fill="url(#paint0_linear_87_7724)"></rect>
+                  <path d="M8 23H32V28C32 29.1046 31.1046 30 30 30H10C8.89543 30 8 29.1046 8 28V23Z"
+                    fill="url(#paint1_linear_87_7724)"></path>
+                  <rect x="8" y="16" width="24" height="7" fill="url(#paint2_linear_87_7724)"></rect>
+                  <rect x="8" y="9" width="24" height="7" fill="url(#paint3_linear_87_7724)"></rect>
+                  <path
+                    d="M8 12C8 10.3431 9.34315 9 11 9H17C18.6569 9 20 10.3431 20 12V24C20 25.6569 18.6569 27 17 27H8V12Z"
+                    fill="#000000" fill-opacity="0.3"></path>
+                  <rect y="7" width="18" height="18" rx="2" fill="url(#paint4_linear_87_7724)"></rect>
+                  <path
+                    d="M15 11.0142H13.0523L11.5229 17.539L9.84967 11H8.20261L6.51634 17.539L5 11.0142H3L5.60131 21H7.3268L9 14.6879L10.6732 21H12.3987L15 11.0142Z"
+                    fill="white"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_87_7724" x1="8" y1="6.66667" x2="32" y2="6.66667"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#2B78B1"></stop>
+                      <stop offset="1" stop-color="#338ACD"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_87_7724" x1="8" y1="27.375" x2="32" y2="27.375"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1B366F"></stop>
+                      <stop offset="1" stop-color="#2657B0"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_87_7724" x1="18.5" y1="20" x2="32" y2="20"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#20478B"></stop>
+                      <stop offset="1" stop-color="#2D6FD1"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_87_7724" x1="18.5" y1="13" x2="32" y2="13"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#215295"></stop>
+                      <stop offset="1" stop-color="#2E84D3"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint4_linear_87_7724" x1="3.31137e-08" y1="17" x2="19" y2="17"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#223E74"></stop>
+                      <stop offset="1" stop-color="#215091"></stop>
+                    </linearGradient>
+                  </defs>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- ppt -->
+            <div class="carousel-item px-1">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <circle cx="17" cy="16" r="14" fill="url(#paint0_linear_87_7757)"></circle>
+                  <mask id="mask0_87_7757" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="2" width="28"
+                    height="28">
+                    <circle cx="17" cy="16" r="14" fill="#C4C4C4"></circle>
+                  </mask>
+                  <g mask="url(#mask0_87_7757)">
+                    <rect x="18" width="17" height="17" fill="url(#paint1_linear_87_7757)"></rect>
+                    <path
+                      d="M6 12C6 10.3431 7.34315 9 9 9H17C18.6569 9 20 10.3431 20 12V24C20 25.6569 18.6569 27 17 27H6V12Z"
+                      fill="#000000" fill-opacity="0.3"></path>
+                    <rect x="1" width="17" height="17" fill="#EB6C4D"></rect>
+                  </g>
+                  <rect y="7" width="18" height="18" rx="2" fill="url(#paint2_linear_87_7757)"></rect>
+                  <path
+                    d="M13 14.4571C13 12.3 11.5799 11 9.32787 11H6V21H8.06557V17.9571H9.2418C11.3504 17.9571 13 16.7571 13 14.4571ZM10.9057 14.5C10.9057 15.4714 10.2889 16.1 9.28484 16.1H8.06557V12.8714H9.27049C10.2746 12.8714 10.9057 13.4 10.9057 14.5Z"
+                    fill="white"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_87_7757" x1="3" y1="17.931" x2="31" y2="17.931"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#A73A24"></stop>
+                      <stop offset="1" stop-color="#F75936"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_87_7757" x1="31.5" y1="10" x2="18" y2="10"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FDB8A3"></stop>
+                      <stop offset="1" stop-color="#F1876D"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_87_7757" x1="7.38325e-08" y1="17.2414" x2="18" y2="17.2414"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#A73A24"></stop>
+                      <stop offset="1" stop-color="#F75936"></stop>
+                    </linearGradient>
+                  </defs>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- JS -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <rect x="2" y="2" width="28" height="28" fill="#FFCA28"></rect>
+                  <path
+                    d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z"
+                    fill="#3E3E3E"></path>
+                  <path
+                    d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z"
+                    fill="#3E3E3E"></path>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- python -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.0164 2C10.8193 2 9.03825 3.72453 9.03825 5.85185V8.51852H15.9235V9.25926H5.97814C3.78107 9.25926 2 10.9838 2 13.1111L2 18.8889C2 21.0162 3.78107 22.7407 5.97814 22.7407H8.27322V19.4815C8.27322 17.3542 10.0543 15.6296 12.2514 15.6296H19.5956C21.4547 15.6296 22.9617 14.1704 22.9617 12.3704V5.85185C22.9617 3.72453 21.1807 2 18.9836 2H13.0164ZM12.0984 6.74074C12.8589 6.74074 13.4754 6.14378 13.4754 5.40741C13.4754 4.67103 12.8589 4.07407 12.0984 4.07407C11.3378 4.07407 10.7213 4.67103 10.7213 5.40741C10.7213 6.14378 11.3378 6.74074 12.0984 6.74074Z"
+                    fill="url(#paint0_linear_87_8204)"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.9834 30C21.1805 30 22.9616 28.2755 22.9616 26.1482V23.4815L16.0763 23.4815L16.0763 22.7408L26.0217 22.7408C28.2188 22.7408 29.9998 21.0162 29.9998 18.8889V13.1111C29.9998 10.9838 28.2188 9.25928 26.0217 9.25928L23.7266 9.25928V12.5185C23.7266 14.6459 21.9455 16.3704 19.7485 16.3704L12.4042 16.3704C10.5451 16.3704 9.03809 17.8296 9.03809 19.6296L9.03809 26.1482C9.03809 28.2755 10.8192 30 13.0162 30H18.9834ZM19.9015 25.2593C19.1409 25.2593 18.5244 25.8562 18.5244 26.5926C18.5244 27.329 19.1409 27.9259 19.9015 27.9259C20.662 27.9259 21.2785 27.329 21.2785 26.5926C21.2785 25.8562 20.662 25.2593 19.9015 25.2593Z"
+                    fill="url(#paint1_linear_87_8204)"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_87_8204" x1="12.4809" y1="2" x2="12.4809" y2="22.7407"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#327EBD"></stop>
+                      <stop offset="1" stop-color="#1565A7"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_87_8204" x1="19.519" y1="9.25928" x2="19.519" y2="30"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FFDA4B"></stop>
+                      <stop offset="1" stop-color="#F9C600"></stop>
+                    </linearGradient>
+                  </defs>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- Node.js -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M17.1725 2.29872C16.4627 1.89953 15.5373 1.90132 14.8269 2.29872C11.2689 4.26227 7.71082 6.22641 4.15216 8.18906C3.45969 8.55335 2.99264 9.29698 3.00009 10.0688V21.9328C2.99509 22.7197 3.48622 23.4705 4.19655 23.8298C5.21871 24.3736 6.2118 24.9726 7.25244 25.4802C8.45451 26.0709 9.95843 26.2015 11.1752 25.5855C12.1629 25.075 12.6016 23.9395 12.6003 22.896C12.6083 18.9806 12.6016 15.0651 12.6034 11.1496C12.6269 10.9756 12.4962 10.7896 12.3064 10.7938C11.8517 10.7866 11.3964 10.7896 10.9417 10.7926C10.7699 10.7764 10.6022 10.9191 10.6152 11.0918C10.6091 14.982 10.6164 18.8734 10.6115 22.7642C10.6214 23.3024 10.2578 23.8196 9.73913 24.0014C8.5412 24.4213 5.12198 22.2012 5.12198 22.2012C4.9965 22.1431 4.91682 22.007 4.92912 21.8718C4.92912 17.9576 4.92973 14.0433 4.92912 10.1297C4.91187 9.97191 5.00912 9.8298 5.15402 9.76538C8.70033 7.8134 12.2448 5.85654 15.7911 3.90336C15.9143 3.82115 16.086 3.8214 16.2089 3.90396C19.7552 5.85654 23.3003 7.81161 26.8472 9.76368C26.9926 9.828 27.0857 9.9725 27.0709 10.1297C27.0703 14.0433 27.0721 17.9576 27.0697 21.8713C27.0802 22.0098 27.0086 22.144 26.8793 22.2048C23.3661 24.1462 19.8129 26.025 16.3315 28.0228C16.1796 28.1099 16.0075 28.2086 15.8373 28.1126C14.9218 27.6062 14.0174 27.0801 13.1049 26.5688C13.0057 26.5069 12.8794 26.4803 12.7759 26.5496C12.3668 26.7652 11.982 26.9398 11.5122 27.1258C10.8524 27.387 10.9578 27.4938 11.5529 27.8405C12.62 28.4444 13.6889 29.0459 14.756 29.6504C15.4585 30.0888 16.4024 30.12 17.1275 29.7149C20.6861 27.7538 24.2436 25.7904 27.8029 23.8293C28.5113 23.468 29.0049 22.7202 28.9999 21.9327V10.0688C29.0068 9.31264 28.5576 8.58227 27.886 8.21259C24.3156 6.23947 20.7435 4.27064 17.1725 2.29872Z"
+                    fill="#8CC84B"></path>
+                  <path
+                    d="M22.5419 11.2062C21.1452 10.459 19.4836 10.4192 17.9315 10.5169C16.8102 10.6277 15.6309 10.9371 14.814 11.7409C13.9761 12.5489 13.7937 13.8537 14.1917 14.9085C14.4769 15.6539 15.1948 16.1386 15.9372 16.395C16.8935 16.7326 17.8979 16.837 18.9026 16.9414C19.819 17.0366 20.7357 17.1319 21.6165 17.4042C21.9763 17.5234 22.3953 17.7058 22.5055 18.0973C22.6073 18.5609 22.4957 19.0998 22.1193 19.4219C20.9237 20.3682 17.5979 20.2232 16.4166 19.4784C15.939 19.1611 15.7332 18.5994 15.6495 18.0641C15.6402 17.8973 15.5059 17.7443 15.3248 17.757C14.8713 17.7516 14.4178 17.7528 13.9643 17.7564C13.8061 17.7431 13.6416 17.8557 13.6329 18.0172C13.5397 20.4689 15.7914 21.5377 17.9039 21.773C19.1108 21.888 20.3442 21.8814 21.5327 21.6224C22.4261 21.419 23.3219 21.0444 23.9369 20.3563C24.6953 19.52 24.8444 18.2749 24.5043 17.2332C24.2443 16.4559 23.5012 15.9573 22.7416 15.7008C21.7086 15.3466 20.4844 15.1562 19.5488 15.0671C18.1889 14.9376 16.5729 14.9905 16.188 14.0969C16.0345 13.629 16.1651 13.048 16.5951 12.7602C17.7328 11.9885 20.0483 12.091 21.2265 12.6675C21.7675 12.9384 22.081 13.4948 22.2104 14.0565C22.2344 14.2215 22.3454 14.3937 22.5364 14.3865C22.9868 14.3955 23.4372 14.3889 23.8875 14.3895C24.0422 14.4003 24.2116 14.313 24.2418 14.1546C24.2227 12.9806 23.6232 11.7788 22.5419 11.2062Z"
+                    fill="#8CC84B"></path>
+                </g>
+              </svg>
+            </div>
+  
+  
+  
+            <!-- React.js -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
+                    fill="#53C1DE"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
+                    fill="#53C1DE"></path>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- SQL -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>file_type_sql</title>
+                  <path
+                    d="M8.562,15.256A21.159,21.159,0,0,0,16,16.449a21.159,21.159,0,0,0,7.438-1.194c1.864-.727,2.525-1.535,2.525-2V9.7a10.357,10.357,0,0,1-2.084,1.076A22.293,22.293,0,0,1,16,12.078a22.36,22.36,0,0,1-7.879-1.3A10.28,10.28,0,0,1,6.037,9.7v3.55C6.037,13.724,6.7,14.528,8.562,15.256Z"
+                    style="fill:#ffda44"></path>
+                  <path
+                    d="M8.562,21.961a15.611,15.611,0,0,0,2.6.741A24.9,24.9,0,0,0,16,23.155a24.9,24.9,0,0,0,4.838-.452,15.614,15.614,0,0,0,2.6-.741c1.864-.727,2.525-1.535,2.525-2v-3.39a10.706,10.706,0,0,1-1.692.825A23.49,23.49,0,0,1,16,18.74a23.49,23.49,0,0,1-8.271-1.348,10.829,10.829,0,0,1-1.692-.825V19.96C6.037,20.426,6.7,21.231,8.562,21.961Z"
+                    style="fill:#ffda44"></path>
+                  <path
+                    d="M16,30c5.5,0,9.963-1.744,9.963-3.894V23.269a10.5,10.5,0,0,1-1.535.762l-.157.063A23.487,23.487,0,0,1,16,25.445a23.422,23.422,0,0,1-8.271-1.351c-.054-.02-.106-.043-.157-.063a10.5,10.5,0,0,1-1.535-.762v2.837C6.037,28.256,10.5,30,16,30Z"
+                    style="fill:#ffda44"></path>
+                  <ellipse cx="16" cy="5.894" rx="9.963" ry="3.894" style="fill:#ffda44"></ellipse>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- Mongodb -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <defs>
+                    <linearGradient id="a" x1="-645.732" y1="839.188" x2="-654.59" y2="839.25"
+                      gradientTransform="matrix(-0.977, -0.323, -0.29, 0.877, -375.944, -928.287)"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.231" stop-color="#999875"></stop>
+                      <stop offset="0.563" stop-color="#9b9977"></stop>
+                      <stop offset="0.683" stop-color="#a09f7e"></stop>
+                      <stop offset="0.768" stop-color="#a9a889"></stop>
+                      <stop offset="0.837" stop-color="#b7b69a"></stop>
+                      <stop offset="0.896" stop-color="#c9c7b0"></stop>
+                      <stop offset="0.948" stop-color="#deddcb"></stop>
+                      <stop offset="0.994" stop-color="#f8f6eb"></stop>
+                      <stop offset="1" stop-color="#fbf9ef"></stop>
+                    </linearGradient>
+                    <linearGradient id="b" x1="-644.287" y1="823.405" x2="-657.028" y2="845.476"
+                      gradientTransform="matrix(-0.977, -0.323, -0.29, 0.877, -375.944, -928.287)"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#48a547"></stop>
+                      <stop offset="1" stop-color="#3f9143"></stop>
+                    </linearGradient>
+                    <linearGradient id="c" x1="-643.386" y1="839.485" x2="-652.418" y2="833.417"
+                      gradientTransform="matrix(-0.977, -0.323, -0.29, 0.877, -375.944, -928.287)"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#41a247"></stop>
+                      <stop offset="0.352" stop-color="#4ba74b"></stop>
+                      <stop offset="0.956" stop-color="#67b554"></stop>
+                      <stop offset="1" stop-color="#69b655"></stop>
+                    </linearGradient>
+                  </defs>
+                  <title>file_type_mongo</title>
+                  <path
+                    d="M16.62,30l-.751-.249s.1-3.8-1.275-4.067c-.9-1.048.133-44.741,3.423-.149a2.712,2.712,0,0,0-1.333,1.523A14.1,14.1,0,0,0,16.62,30Z"
+                    style="fill:url(#a)"></path>
+                  <path
+                    d="M17.026,26.329a13.223,13.223,0,0,0,5-13.225C20.556,6.619,17.075,4.487,16.7,3.673a9.792,9.792,0,0,1-.825-1.6l.277,18.069S15.578,25.664,17.026,26.329Z"
+                    style="fill:url(#b)"></path>
+                  <path
+                    d="M15.487,26.569S9.366,22.4,9.72,15.025A15.54,15.54,0,0,1,15.239,3.377,1.725,1.725,0,0,0,15.846,2c.381.82.319,12.243.359,13.579C16.36,20.776,15.916,25.588,15.487,26.569Z"
+                    style="fill:url(#c)"></path>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- HTML -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                  <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                  <path
+                    d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+                    fill="white"></path>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- CSS -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="card_icon">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
+                  <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
+                  <path
+                    d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                    fill="white"></path>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- Bootstrapt -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-20 -20 64.00 64.00" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#fcfcfc"
+                  stroke-width="1.8719999999999999">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z"
+                    fill="#712cf9"></path>
+                </g>
+                <g id="SVGRepo_iconCarrier">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z"
+                    fill="#712cf9"></path>
+                </g>
+              </svg>
+            </div>
+  
+            <!-- npm -->
+            <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M0 10V20H9V22H16V20H32V10H0Z" fill="#CB3837"></path>
+                  <path
+                    d="M5.46205 12H2V18H5.46205V13.6111H7.22344V18H8.98482V12H5.46205ZM10.7462 12V20H14.269V18H17.731V12H10.7462ZM15.9696 16.3889H14.269V13.6111H15.9696V16.3889ZM22.9545 12H19.4924V18H22.9545V13.6111H24.7158V18H26.4772V13.6111H28.2386V18H30V12H22.9545Z"
+                    fill="white"></path>
+                </g>
+              </svg>
+            </div>
+  
+          </div>
+  
+  
+  
+  
+          <!-- <div class="carousel-item">
+              <svg width="75px" height="auto" viewBox="-16 -16 64.00 64.00" fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 64 64">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="m440.017,221.755c4.143,0 7.5-3.357 7.5-7.5v-13.254c0-16.126-13.12-29.246-29.246-29.246h-30.932l-12.83-33.735c-4.021-10.572-16.03-18.854-27.342-18.854h-104.667v-15.548c25.176-3.648 44.582-25.364 44.582-51.535 0-28.719-23.364-52.083-52.082-52.083-28.719,0-52.083,23.364-52.083,52.082 0,26.172 19.406,47.888 44.583,51.535v15.548h-104.667c-11.312,0-23.321,8.282-27.342,18.854l-12.83,33.735h-30.932c-16.126,0-29.246,13.12-29.246,29.246v13.254c0,4.143 3.357,7.5 7.5,7.5h40.35v15h-40.35c-4.143,0-7.5,3.357-7.5,7.5v13.254c0,16.126 13.12,29.246 29.246,29.246h28.604v153.746c0,16.267 13.233,29.5 29.5,29.5h250.334c16.267,0 29.5-13.233 29.5-29.5v-153.745h28.604c16.126,0 29.246-13.12 29.246-29.246v-13.254c0-4.143-3.357-7.5-7.5-7.5h-40.35v-15h40.35zm-167.935-169.673c0,20.447-16.635,37.083-37.082,37.083s-37.083-16.636-37.083-37.083 16.636-37.082 37.083-37.082 37.082,16.635 37.082,37.082zm160.435,205.427c0,7.855-6.391,14.246-14.246,14.246h-28.604v-20h42.85v5.754zm-57.85,182.991c0,7.995-6.505,14.5-14.5,14.5h-250.334c-7.995,0-14.5-6.505-14.5-14.5v-188.745h279.334v188.745zm-337.184-182.991v-5.754h42.85v20h-28.604c-7.855,0-14.246-6.391-14.246-14.246zm47.85-20.754v-15h299.334v15h-299.334zm-47.85-35.754c0-7.855 6.391-14.246 14.246-14.246h28.604v20h-42.85v-5.754zm85.35-66.836h224.334c5.144,0 11.493,4.379 13.322,9.187l14.178,37.281v26.122h-279.334v-26.122l14.178-37.281c1.829-4.808 8.178-9.187 13.322-9.187zm309.684,66.836v5.754h-42.85v-20h28.604c7.855,0 14.246,6.391 14.246,14.246z">
+                      </path>
+                      <path
+                        d="m119.833,186.755h30c4.143,0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5h-30c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5 7.5,7.5z">
+                      </path>
+                      <path
+                        d="m179.833,186.755h170.334c4.143,0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5h-170.334c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5 7.5,7.5z">
+                      </path>
+                      <path
+                        d="m235,59.582c4.143,0 7.5-3.357 7.5-7.5v-14.582c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v14.582c0,4.143 3.357,7.5 7.5,7.5z">
+                      </path>
+                      <path
+                        d="M235,371.551c-18.871,0-34.225,15.354-34.225,34.225S216.129,440,235,440s34.225-15.354,34.225-34.225 S253.871,371.551,235,371.551z M215.775,405.775c0-10.601,8.624-19.225,19.225-19.225s19.225,8.624,19.225,19.225 S245.601,425,235,425S215.775,416.376,215.775,405.775z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+            </div> -->
+  
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <script>
+        let items = document.querySelectorAll('#carousel-slide .carousel .carousel-item')
+        items.forEach((el) => {
+          const minPerSlide = 10;
+          let next = el.nextElementSibling
+          for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+              // wrap carousel by using first child
+              next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+          }
+        })
+      </script>
+  </section>
+
+  <!--工作經歷---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- 20230807套用 -->
+  <!-- tempOverview在app.js由JSON檔案帶出 -->
+  <section class="white-section py-5" id="experience">
+    <div class="container text-center">
+      <h2 class="container text-center"> Experience </h2>
+    </div>
+    <div class="container py-5">
+      <%- tempOverview %>
+    </div>
+  </section>
+
+  <!--學歷---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- 20230807套用 -->
+  <!-- 20230821套用 按鈕下壓 -->
+  <!-- <section class="colored-section py-5" id="education"> -->
+  <section class="colored-section">
+
+    <!-- 讓展開的照片可以重疊在另一張上 -->
+    <!-- <style>
+      .multi-collapse {
+        position: absolute;
+      }
+    </style> -->
+
+    <!-- 20231124 增加展開證照時，一次只能展開一張照片 -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var multiCollapse = document.querySelectorAll('.multi-collapse');
+        multiCollapse.forEach(function (collapse) {
+          collapse.addEventListener('show.bs.collapse', function () {
+            // 顯示某個 collapse 時，關閉其他的 collapse
+            multiCollapse.forEach(function (otherCollapse) {
+              if (otherCollapse !== collapse) {
+                otherCollapse.classList.remove('show');
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <div class="row">
+      <div class="container col " id="education">
+        <h2 class="container text-center pt-5" type="button" data-bs-toggle="collapse" data-bs-target=".collapse"
+          aria-expanded="false" aria-controls="<%= collapseTarget%>">Education</h2>
+        <!-- 利用ejs的功能在html裡插入帶出的JSON數值 -->
+        <% jsonEducation.forEach((item, index)=> { %>
+          <div class="container pt-5">
+            <button class="btn btn-light d-grid gap-2 col-12 mx-auto p-3 fw-bold fs-2" type="button"
+              data-bs-toggle="collapse" data-bs-target="#<%= item.target %>" aria-expanded="false"
+              aria-controls="<%= item.target %>">
+              <%= item.title %>
+            </button>
+          </div>
+          <div id="<%= item.target %>" class="collapse container">
+            <div class="collapse-card card-body bg-dark col-md-12 mx-auto p-5 lh-base fs-2">
+              <%= item.deparment %>
+                <br>
+                <a rel="nofollow noopener" target="_blank" href="<%= item.hyperlink %>">link</a>
+            </div>
+          </div>
+          <% }); %>
+      </div>
+    </div>
+
+    <!-- 使用於證照 -->
+    <!-- <div class="container col " id="education"> -->
+    <h2 class="container text-center p-5" type="button" data-bs-toggle="collapse" data-bs-target=".collapse"
+      aria-expanded="false" aria-controls="<%= jsonCertificatecollapseTarget%>">Certificate</h2>
+    <!-- 利用ejs的功能在html裡插入帶出的JSON數值 -->
+    <div class="container">
+      <div class="row">
+        <% jsonCertificate.forEach((item, index)=> { %>
+          <div class="col mb-5">
+            <p class="d-inline-flex">
+              <button class="btn btn-success  d-md-block fw-bold fs-6"
+                style="width: auto; height: auto; --bs-btn-padding-y: .50rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#<%= item.target %>" aria-expanded="true"
+                aria-controls="<%= item.target %>">
+                <%= item.title %>
+              </button>
+            </p>
+            <div class="collapse multi-collapse" id="<%= item.target %>">
+              <div class="border border-success" style="--bs-border-opacity: .5;">
+                <img src="<%= item.picture %>" alt="<%= item.title %>" style="width:500px; height: auto;">
+              </div>
+            </div>
+          </div>
+          <% }); %>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- articles-相關文章---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- 本來用class="card-deck"可以快速變成卡片樣式(但不支援5.0.1)
+但為了讓樣式可以符合不同平台使用，所以要在大平台上劃分為3等分，中劃分為2等份
+小平台(手機等)為100% -->
+
+  <!-- So I'm going to create another div and
+I'm going to give this a class of col-lg-4, because by default, when we're on the largest sizes,
+so laptop and desktop sizes, I want each card to take up four units, so that's a third of the page. -->
+  <!-- 1. 增加翻面的CSS 跟 -->
+
+  <section class="white-section" id="articles">
+    <div class="pb-5 container text-center">
+      <h2 class="pt-5">Articles</h2>
+      <p clsaa="">Personal or relate author. Welcome to download and read freely!</p>
+
+      <!-- </div>
+    <div class=""> -->
+      <div class="row py-5 ">
+        <%for (const article in articleJsonObject){ %>
+          <div class="col-lg-4 flip-card ">
+            <!-- <div class="col-lg-4 m-auto flip-card"></div> -->
+            <div class=" flip-card-inner " >
+              <div class=" flip-card-front">
+                <svg width="150" height="150" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50.6 -50.6 607.20 607.20" xml:space="preserve"
+                  fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0">
+                    <rect x="-50.6" y="-50.6" width="607.20" height="607.20" rx="303.6" fill="#7ed0ec" strokewidth="0">
+                    </rect>
+                  </g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path style="fill:#E8E3E3;"
+                        d="M373,456h37.6c3.6,0,3.2-6,3.2-9.6V47.6c0-3.6,0.4-3.6-3.2-3.6H103.4c-3.6,0-9.6,0-9.6,3.6v33.6 L373,456z">
+                      </path>
+                      <path style="fill:#E8E3E3;"
+                        d="M419,420h35.6c3.6,0,3.2-10,3.2-13.6V11.6c0-3.6,0.4-7.6-3.2-7.6H147.4c-3.6,0-9.6,4-9.6,7.6V44 L419,420z">
+                      </path>
+                    </g>
+                    <path style="fill:#F4EFEF;"
+                      d="M369.8,493.6c0,3.6-2.8,6.4-6.4,6.4H56.6c-3.6,0-6.4-2.8-6.4-6.4V90.4c0-3.6,2.8-6.4,6.4-6.4h306.8 c3.6,0,6.4,2.8,6.4,6.4V493.6z">
+                    </path>
+                    <rect x="81.8" y="124" style="fill:#343637;" width="256" height="80"></rect>
+                    <rect x="85.8" y="364" style="fill:#7D8B95;" width="96" height="96"></rect>
+                    <path d="M257.8,242h-176c-2.4,0-4-1.6-4-4s1.6-4,4-4h176c2.4,0,4,1.6,4,4S260.2,242,257.8,242z">
+                    </path>
+                    <path d="M257.8,274h-176c-2.4,0-4-1.6-4-4s1.6-4,4-4h176c2.4,0,4,1.6,4,4S260.2,274,257.8,274z">
+                    </path>
+                    <path d="M257.8,306h-176c-2.4,0-4-1.6-4-4s1.6-4,4-4h176c2.4,0,4,1.6,4,4S260.2,306,257.8,306z">
+                    </path>
+                    <path d="M257.8,338h-176c-2.4,0-4-1.6-4-4s1.6-4,4-4h176c2.4,0,4,1.6,4,4S260.2,338,257.8,338z">
+                    </path>
+                    <path d="M337.8,370h-120c-2.4,0-4-1.6-4-4s1.6-4,4-4h120c2.4,0,4,1.6,4,4S340.2,370,337.8,370z">
+                    </path>
+                    <path d="M337.8,402h-120c-2.4,0-4-1.6-4-4s1.6-4,4-4h120c2.4,0,4,1.6,4,4S340.2,402,337.8,402z">
+                    </path>
+                    <path d="M337.8,434h-120c-2.4,0-4-1.6-4-4s1.6-4,4-4h120c2.4,0,4,1.6,4,4S340.2,434,337.8,434z">
+                    </path>
+                    <path d="M337.8,466h-120c-2.4,0-4-1.6-4-4s1.6-4,4-4h120c2.4,0,4,1.6,4,4S340.2,466,337.8,466z">
+                    </path>
+                    <path d="M337.8,242h-52c-2.4,0-4-1.6-4-4s1.6-4,4-4h52c2.4,0,4,1.6,4,4S340.2,242,337.8,242z"></path>
+                    <path d="M337.8,274h-52c-2.4,0-4-1.6-4-4s1.6-4,4-4h52c2.4,0,4,1.6,4,4S340.2,274,337.8,274z"></path>
+                    <path d="M337.8,306h-52c-2.4,0-4-1.6-4-4s1.6-4,4-4h52c2.4,0,4,1.6,4,4S340.2,306,337.8,306z"></path>
+                    <path d="M337.8,338h-52c-2.4,0-4-1.6-4-4s1.6-4,4-4h52c2.4,0,4,1.6,4,4S340.2,338,337.8,338z"></path>
+                    <path
+                      d="M361.4,506H54.6c-6,0-10.4-4.8-10.4-10.4V92.4c0-6,4.8-10.4,10.4-10.4h306.8c6,0,10.4,4.8,10.4,10.4v402.8 C371.8,501.2,367,506,361.4,506z M54.2,90c-1.2,0-2.4,1.2-2.4,2.4v402.8c0,1.2,1.2,2.4,2.4,2.4H361c1.2,0,2.4-1.2,2.4-2.4V92.4 c0-1.2-1.2-2.4-2.4-2.4H54.2z">
+                    </path>
+                    <path
+                      d="M335.8,210h-256c-2.4,0-4-1.6-4-4v-80c0-2.4,1.6-4,4-4h256c2.4,0,4,1.6,4,4v80C339.8,208.4,338.2,210,335.8,210z M83.8,202 h248v-72h-248V202z">
+                    </path>
+                    <path
+                      d="M179.8,466h-96c-2.4,0-4-1.6-4-4v-96c0-2.4,1.6-4,4-4h96c2.4,0,4,1.6,4,4v96C183.8,464.4,182.2,466,179.8,466z M87.8,458h88 v-88h-88V458z">
+                    </path>
+                    <path
+                      d="M407.4,462h-37.6c-2.4,0-4-1.6-4-4s1.6-4,4-4h37.6c1.2,0,2.4-1.2,2.4-2.4V48.4c0-1.2-1.2-2.4-2.4-2.4H100.6 c-1.2,0-2.4,1.2-2.4,2.4V84c0,2.4-1.6,4-4,4s-4-1.6-4-4V48.4c0-6,4.8-10.4,10.4-10.4h306.8c6,0,10.4,4.8,10.4,10.4v402.8 C417.8,457.2,413,462,407.4,462z">
+                    </path>
+                    <path
+                      d="M451.4,424h-37.6c-2.4,0-4-1.6-4-4s1.6-4,4-4h37.6c1.2,0,2.4-1.2,2.4-2.4V10.4c0-1.2-1.2-2.4-2.4-2.4H144.6 c-1.2,0-2.4,1.2-2.4,2.4V38c0,2.4-1.6,4-4,4s-4-1.6-4-4V10.4c0-6,4.8-10.4,10.4-10.4h306.8c6,0,10.4,4.8,10.4,10.4v402.8 C461.8,419.2,457,424,451.4,424z">
+                    </path>
+                  </g>
+                  <!-- 文字標示 -->
+                  <text x="34%" y="28%" dominant-baseline="middle" text-anchor="middle" font-size="38" fill="white">
+                    <%= articleJsonObject[article].articleTitlemuted %>
+                  </text>
+                </svg>
+        
+              </div>
+              <div class="flip-card-back text-justif">
+                <div class="card-header ">
+                  <h4>
+                    <%= articleJsonObject[article].articleTitle %>
+                  </h4>
+                  <!-- 增加  style="white-space: pre-line;" 效果，在文字敘述出現\n時換行-->
+                  <p class="" style="white-space: pre-line;"> 
+                    <%= articleJsonObject[article].articledescription %>
+                  </p>
+                  <p><a rel="nofollow noopener" target="_blank" class="btn btn-secondary" href="/articles?article=<%=articleJsonObject[article].articlePDF%>">View details »</a>
+                  </p>
+                  <!-- <p><a rel="nofollow noopener" target="_blank" class="btn btn-secondary" href="/articles">View details »</a>
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }; %>
+      </div>
+    </div>
+  </section>
+
+  <!--照片花絮 Testimonials---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--在Booostrap 的Carousel https://getbootstrap.com/docs/5.1/components/carousel/  -->
+  <!-- 這一段卡了2天，因為Bootstrap scripts 版本問題，課堂用3.2.1，可是已經更新到5.0.1 -->
+  <section class="colored-section p-5" id="testimonials">
+
+    <!-- 外部 container，可以保持原有对齐功能 -->
+    <div class="container">
+      <!-- 内部 container，用于限制轮播控制按钮的对齐 -->
+      <div class="container">
+
+        <!-- 設定: https://getbootstrap.com/docs/5.1/components/carousel/#options -->
+        <div id="testimonial-carousel" class="carousel" data-bs-ride="carousel" data-bs-interval="50000"
+          data-bs-pause="hover">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="3"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="4"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="5"
+              aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active">
+              <!-- <div class="carousel-item active container-fluid"> 多了container-fluid會把頁面空間占滿 -->
+              <img class="testimonial-image rounded w-50 mx-auto d-block" src="images/materialise3.jpg"
+                alt="Training for AM software and workflows at Materialise NV in Leuven, Belgium">
+              <div class="link-button" style="position: absolute; bottom: 0; right: 200;">
+                <a href="https://www.materialise.com/" target="_blank"><button class="btn btn-outline-light link-button"
+                    type="button">Link</button></a>
+              </div>
+              <div class="carousel-caption d-none d-sm-block">
+                <h5 class="testimonial-local-text">Leuven, Belgium</h5>
+                <p class="testimonial-text">Training for AM software and workflows at Materialise.</P>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <!-- target=_blank 可以開啟新分頁  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_target-->
+              <img class="testimonial-image rounded w-50 mx-auto d-block" src="images/2016 SISMA.jpg"
+                alt="Training for SISMA ">
+              <div class="link-button" style="position: absolute; bottom: 0; right: 200;">
+                <a href="https://www.sisma.com/en/professional-3d-printers/" target="_blank"><button
+                    class="btn btn-outline-light link-button" type="button">Link</button></a>
+              </div>
+              <div class="carousel-caption d-none d-sm-block">
+                <h5 class="testimonial-local-text">Vicenza, Italia</h5>
+                <p class="testimonial-text">Training for SLM at SISMA.S.P.A.</P>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="testimonial-image rounded w-50 mx-auto d-block" src="images/2016 3Dcream.jpg"
+                class="d-block w-100" alt="Training for SISMA ">
+              <div class="link-button" style="position: absolute; bottom: 0; right: 200;">
+                <a href="https://3dceram.com/" target="_blank"><button class="btn btn-outline-light link-button"
+                    type="button">Link</button></a>
+              </div>
+              <div class="carousel-caption d-none d-sm-block">
+                <h5 class="testimonial-local-text">Limoges, France</h5>
+                <p class="testimonial-text">Vist 3Dcream.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="testimonial-image rounded w-50 mx-auto d-block" src="images/2017 EOS Dr hans Langer.jpg"
+                class="d-block w-100" alt="Training for EOS ">
+              <div class="link-button" style="position: absolute; bottom: 0; right: 200;">
+                <a href="https://www.eos.info/en" target="_blank"><button class="btn btn-outline-light link-button"
+                    type="button">Link</button></a>
+              </div>
+              <div class="carousel-caption d-none d-sm-block">
+                <h5 class="testimonial-local-text">Krailling, Germany</h5>
+                <p class="testimonial-text">Training for operation and sales skills at EOS.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="testimonial-image rounded w-50 mx-auto d-block" src="images/SISMA and EOS certification.jpg"
+                class="d-block w-100" alt="EOS and SISMA training Certificate">
+              <div class="link-button" style="position: absolute; bottom: 0; right: 200;">
+                <a href="#articles"><button class="btn btn-outline-light link-button" type="button">Link</button></a>
+              </div>
+              <div class="carousel-caption d-none d-sm-block">
+                <!-- <h5 class="testimonial-local-text">Limoges, France</h5> -->
+                <p class="testimonial-text">EOS and SISMA training Certificate </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="testimonial-image rounded w-50 mx-auto d-block" src="images/articles.png"
+                class="d-block w-100" alt=" ">
+              <div class="link-button" style="position: absolute; bottom: 0; right: 200;">
+                <a href="#articles"><button class="btn btn-outline-light link-button" type="button">Link</button></a>
+              </div>
+              <div class="carousel-caption d-none d-sm-block">
+                <!-- <h5 class="testimonial-local-text">Limoges, France</h5> -->
+                <p class="testimonial-text">Relative articles</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5.0.1<a>改s成<button> -->
+          <!-- data-bs-target= #連結的目標ID 必須是要變動的頁面 -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer ----連結資訊---------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <%- include("partials/footer")%>

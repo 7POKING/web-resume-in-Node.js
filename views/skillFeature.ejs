@@ -1,0 +1,73 @@
+<head>
+  <link rel="stylesheet" href="/css/skillfeaturestyles.css">
+</head>
+
+<body>
+<div class="container text-center">
+  <img src="<%= jsonObject_skillfeature_image %>" class="w-100 rounded mx-auto d-block"  alt="<%= jsonObject_skillfeature_image %>">
+  <h1 class="mt-3 text-capitalize">
+    competence: <%= jsonObject_skillfeature_competence %>
+  </h1>
+</div>
+
+  <!-- <div class="middle-container"> -->
+    <!-- <div class="profile"> -->
+      <!-- <img src="image/angela.png" alt="angela profile"> -->
+      <!-- 勝任力 用星星表示 ?-->
+      <!-- <h2>{%COMPETENCE%}</h2> -->
+
+      <!-- <%-include ("partials/header")%> -->
+        <!-- <h2>{% %}</h2> -->
+        <div class="container">
+          <div class="skill-row">
+            <div class="row">
+              <%var index=0 %>
+                <%for (const feature in jsonObject_skillfeature){ %>
+                  <%console.log(index, index%2) %>
+                    <%if(index%2===0){%>
+                      <hr class="featurette-divider">
+                      <div class="row featurette">
+                        <div class="col-md-7">
+                          <h2 class="featurette-heading px-3 text-capitalize">
+                            <%= jsonObject_skillfeature[feature].feaTitle %>
+                              <span class="text-muted">
+                                <%= jsonObject_skillfeature[feature].feaTitlemuted %>
+                              </span>
+                          </h2>
+                          <p class="">
+                            <%= jsonObject_skillfeature[feature].feadescription %>
+                          </p>
+                        </div>
+                        <div class="col-md-5">
+                          <img class="fiximg d-block mb-3 img-fluid" src="<%=jsonObject_skillfeature[feature].feaImage %>"
+                            alt="<%=jsonObject_skillfeature[feature] %>">
+                        </div>
+                      </div>
+                      <% }else{ %>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                          <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading px-3 text-capitalize">
+                              <%= jsonObject_skillfeature[feature].feaTitle %> <span class="text-muted"
+                                  <%=jsonObject_skillfeature[feature].feaTitlemuted %></span>
+                            </h2>
+                            <p class="">
+                              <%= jsonObject_skillfeature[feature].feadescription %>
+                            </p>
+                          </div>
+                          <div class="col-md-5 order-md-1">
+                            <img class="fiximg d-block mb-3 img-fluid" src="<%=jsonObject_skillfeature[feature].feaImage %>"
+                              alt="<%=jsonObject_skillfeature[feature] %>">
+                          </div>
+                        </div>
+
+                        <%}%>
+                          <%index++%>
+                            <% } %>
+            </div>
+          </div>
+        </div>
+
+
+</body>
+<%-include("partials/footer")%>

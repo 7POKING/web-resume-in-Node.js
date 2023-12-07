@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": 0,
+    "productName": "Senior Manufacturing Supervisor", 
+    "image": "📈",
+    "from": "Pegavision Corporation, Taoyuan, Taiwan",
+    "nutrients": "Senior Manufacturing Supervisor in Packaging Production Department",
+    "quantity": "Feb.2023 ~ Present",
+    "price": "<p class=\"product__description\">Achieving production capacity targets, process optimization, workforce management, anomaly analysis and improvement, proposing improvement projects, execution and effectiveness evaluation, overall departmental performance enhancement</p>",
+    "organic": true,
+    "herf": "https://www.pegavision.com/en/",
+    "description": "<ul class=\"product__description\">\n<li><b>Improved product inspection process</b>during production, reducing personnel errors from 2 times per month to 0 times per month, increasing OEE by 1.2%.</li>\n <li><b>Implemented a digital pallet management system</b>, reducing packaging errors from 1 time per month to 0 times per month, and reducing labor requirements from 8 persons per day to 4 persons per day, while increasing packaging efficiency by 35%.</li>\n <li><b>Improved product labeling and pasting process</b>, reducing personnel errors from 4 times per month to 0 times per month and reducing the required labor from 6 persons per day to 4 persons per day, while increasing OEE by 0.6%.</li>\n <li><b> Developed a program using Excel VBA </b>to record relevant production information by scanning QR codes, assisting in operations, reducing data verification processes during production, and improving packaging efficiency by 10%.</li>\n <li><b>Improved the production material requisition process</b>, reducing unnecessary material wastage from 2.6% per month to 1.1% per month.</li>\n <li><b>Implemented cross-department process improvements and communication</b>, reducing ineffective working hours by 67 hours per month for 4 persons.</li>\n <li><b> Introduced a digital operation system for weighing and preparation</b>, reducing personnel errors from 3 times per month to 0 times per month and reducing labor requirements from 14 persons per day to 9 persons per day, while increasing preparation efficiency by 40%.</li>\n <li><b> Improved the centralized material operation process</b>, increasing operational efficiency by 6%.</li>\n</ul>"
+  },
+  {
+    "id": 1,
+    "productName": "Manufacturing Engineer",
+    "image": "🏭",
+    "from": "Pegavision Corporation, Taoyuan, Taiwan",
+    "nutrients": "Manufacturing Engineer in Hydration Packaging Department", 
+    "quantity": "Mar.2018 ~ Jan.2023",
+    "price": "<p class=\"product__description\">Responsible for implementation of production processes and procedures, leading productivity improvements with project based activities, including new product </p>",
+    "organic": false,
+    "herf": "https://www.pegavision.com/en/",
+    "description": "<ul class=\"product__description\">\n<li><b>Training production team</b>, that use paperless electronic processes, and make the system start to use on time.</li>\n<li><b>Conduct reviews of the production processes</b> to try to identify areas for improvements, that plan and execute improve projects in further. <ol><li> Introduce the paperless electronic system to the hydration process to control the lens feeding operation with the system and reduce the error rate by 0.02%.</li><li> Change labeling and identification methods of lens in hydration process, that idle production is reduced by 22%. that use paperless electronic processes, and make the system start to use on time.</ol></li>\n <li><b>Ensures production team has access</b> to all relevant raw materials and equipment. <ol><li>Install the phone in the work area, improve the material on line process, and reduce 1.6% (about 24 minutes) OE Loss caused by waiting for material downtime</li> <li>Promote the operation of the material loading inspection system to reduce the probability of material use error to less than 0.01%</li> <li>Improve the process of returning the remaining materials to the warehouse, reduce the time for material inventory, and improve the efficiency of storage space usage ensure the smooth running of production.</li></ol>\n<li><b> Cost reduction</b> by analyzing the logistics box and storage space usage process, reducing the monthly cost of purchasing logistics boxes, and saving about NT$ 39,0000 for purchasing logistics boxes every year.</li></li></ul>"
+  },
+  {
+    "id": 2,
+    "productName": "Product Manager",
+    "image": "💼",
+    "from": "DETEKT Technology inc.",
+    "nutrients": "Product Manager in Engineering Research and Development Department",
+    "quantity": "Jul.2014 ~ Mar.2018",
+    "price": "<p class=\"product__description\">Leads product development, strategy from customers’ needs and desires by the research needed to obtain market information.</p>",
+    "organic": false,
+    "herf": "https://www.detekt.com.tw/en",
+    "description": "<ul class=\"product__description\">\n<li><b> Assist the company to obtain</b> ISO13485, ISO9001 and GMP certification for manufacturing medical devices using 3D printing technology.</li></li>\n <li><b>Successfully applied</b> for and implemented the Small Business Innovation Research (SBIR) program (subsidy fee of NT$ 1,500,000) research and development of titanium alloy medical device implants manufactured with high-end 3D printing machines.</li>\n <li><b> Complete</b> at least 5 high-end 3D printers, assist in sales promotion, installation and education training.</li>\n </ul>"
+  },
+  {
+    "id": 3,
+    "productName": "Product Engineer",
+    "image": "⚙️",
+    "from": "DETEKT Technology inc.",
+    "nutrients": "Product Engineer in Engineering Research and Development Department",
+    "quantity": "Oct.2013 ~ Jul.2014",
+    "price": "<p class=\"product__description\">The responsible for designing commercial products and their production processes.</p>",
+    "organic": false,
+    "herf": "https://www.detekt.com.tw/en",
+    "description": "<ul class=\"product__description\">\n<li><b>Establish a process</b>  for producing medical device with 3D printing technology, that production customized medical device, and formulate SOP.</li>\n <li><b>Operating 3D medical software</b> such as <a rel=\"nofollow noopener\" target=\"_blank\" href=\"https://www.materialise.com/en/healthcare/mimics-innovation-suite?gad=1&gclid=CjwKCAjw7oeqBhBwEiwALyHLM-T-eFH5Ua9g3OzU-93Vk88s4_lvisPrS_rkLYm-xtFBj6pGcxGgiRoC-GMQAvD_BwE\">Mimics Innovation Suite</a> or <a rel=\"nofollow noopener\" target=\"_blank\" href=\"https://www.dentsplysirona.com/da-dk/explore/implantology/simplant.html\">Simplant</a> to assist medical clients in establishing applications related to clinical medical research, surgical simulations, implant modeling, and more. Participating in over 120 cases annually</li>\n<li><b>Operating high-end 3D printers </b> (EOS P100 or SISMA MYSINT100) and 3D printing software (Materialise Magics) to create customer component for mold improvements and small-batch component production.</li>\n <li><b>Assisting in business promotion and product introductions</b>, providing experience and educational training in 3D printing technology.</li>\n <li><b>In the capacity of a distributor</b>in the Taiwan region, assisting the original equipment manufacturer (OEM) in 3D printer installation, testing, and maintenance.</li>\n</ul>"
+  },
+  {
+    "id": 4,
+    "productName": "Research Assistant",
+    "image": "🔬",
+    "from": "Taiwan Food and Drug Administration",
+    "nutrients": "Research Assistant in Drug Research and Testing Department",
+    "quantity": "Feb.2013 ~ Oct.2013",
+    "price": "<p class=\"product__description\">Examination, registration, and change registration review and inspection of biopharmaceuticals, emerging biotechnological drugs, and in vitro diagnostic reagents for blood screening.</p>",
+    "organic": false,
+    "herf": "https://www.fda.gov.tw/ENG/index.aspx",
+    "description": "<ul class=\"product__description\">\n<li><b>Responsible for inspecting biopharmaceuticals</b>(such as vaccines or blood products) and conducting tasks related to the review of biopharmaceuticals.</li>\n <li><b>Execution of animal experiments</b>, such as pyrogen testing, subcutaneous, intraperitoneal, intracranial injection, or dissection in animals such as guinea pigs and mice.</li>\n <li><b>Execution of activities involving biopharmaceuticals experiments</b>,that implementing standard operating procedures for Good Laboratory Practice (GLP) in work, including endotoxin testing (LAL), formaldehyde, thimerosal, albumin, sterility, and virus inactivation testing.</li>\n</ul>"
+  }
+]

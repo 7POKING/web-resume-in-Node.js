@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" href="/css/cardstyles.css" />
+</head>
+
+<figure class="card">
+  <div class="row">
+    <div class="col-1 card__emoji">{%IMAGE%}</div>
+    <div class="col-6 card__title-box">
+      <h2 class="col card__title">{%PRODUCTNAME%}</h2>
+    </div>
+
+    <div class="col-3 card__details">
+      <div class="col card__detail-box {%NOT_ORGANIC%}">
+        <h6 class="card__detail card__detail--organic">Present Position</h6>
+      </div>
+
+      <div class="card__detail-box">
+        <h6 class="col card__detail fs-5 fw-bold text-start">{%QUANTITY%}</h6>
+      </div>
+    </div>
+
+    <div class="col">
+      <a class="card__link" href="/product?id={%ID%}">
+        <span>Detail <i class="emoji-right">▶️</i></span>
+      </a>
+    </div>
+
+  </div>
+</figure>

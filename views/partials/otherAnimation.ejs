@@ -1,0 +1,81 @@
+
+<!-- Call to Action 改成 Experience section-->
+
+<section class="colored-section">
+    <h2 clss="section-heading" id= exper>Experience</h2>
+    <div class="wrapper">
+    <div class="container d-grid gap-5">
+      
+      <div class="btn">GeeksforGeeks</div>
+      <div class="btn">GeeksforGeeks2</div>
+      <div class="btn">GeeksforGeeks3</div>
+      <div class="btn">GeeksforGeeks4</div>
+   
+  </div>
+  </div>
+
+  <!-- CSS -->
+  /* 2023/07/13測試動畫 https://www.geeksforgeeks.org/split-skewed-button-hover-animation-using-css/  */
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+.wrapper {
+  position: relative;
+  height: 100vh; /* 設置高度，以適應視窗或父元素 */
+}
+
+.container {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  position: relative;
+  letter-spacing: 0.5em;
+  font-size: 30px;
+  height: 60px;
+  /* To center the text vertically */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: skewX(30deg);
+  background: transparent;
+  transition: all 0.7s cubic-bezier(0.7, -0.5, 0.25, 1.5);
+  z-index: -1;
+}
+
+.btn::before {
+  top: -30%;
+  left: 0;
+  background-color: navajowhite;
+}
+
+.btn::after {
+  top: 30%;
+  left: 50%;
+  background-color: greenyellow;
+}
+
+.btn:hover::before {
+  top: 0;
+  left: 50%;
+  transform: skewX(0deg);
+}
+
+.btn:hover::after {
+  top: 0;
+  left: 0;
+  transform: skewX(0deg);
+}

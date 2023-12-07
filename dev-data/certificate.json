@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Occupational Safety And Health Affair Managers Class3",
+    "target": "cer1",
+    "deparment": "",
+    "picture":"./images/cer1.png",
+    "hyperlink": ""
+  },
+  {
+    "title": "First Class Pressure Vessels Personnel",
+    "target": "cer2",
+    "deparment": "",
+    "picture":"./images/Pressure Vessels in EN.jpg",
+    "hyperlink": ""
+  },
+  {
+    "title": "Management Systems Auditor Certificate",
+    "target": "cer3",
+    "deparment": "",
+    "picture":"./images/BSI Auditor cer.png",
+    "hyperlink": ""
+
+  },
+  {
+    "title": "SISMA 3D Printer Advance Technical Training Certificate",
+    "target": "cer4",
+    "deparment": "",
+    "picture":"./images/SISMAcer.png",
+    "hyperlink": "https://sbb.dyu.edu.tw/en/index-e.html"
+
+  }, 
+  {
+    "title": "FOTMIGA P110 Machine Operation",
+    "target": "cer5",
+    "deparment": "",
+    "picture":"./images/EOScer.png",
+    "hyperlink": "https://sbb.dyu.edu.tw/en/index-e.html"
+
+  }
+]

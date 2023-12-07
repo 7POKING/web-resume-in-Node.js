@@ -1,0 +1,48 @@
+
+{
+      "article": {
+        "articleImage": "",
+        "articleTitle": "Production and utilization of recombinant crustacean hyperglycemic hormones",
+        "articleTitlemuted":"Master Thesis" ,
+        "articledescription": "A Thesis Submitted to the Department of Biology \nNational Changuhua University of Educationin \nPartial Fulfillment of the Requirements \nFor the Degree of Master of Biology",
+        "articlePDF":"article/Master Thesis abstract.pdf"
+      },
+      "article3": {
+        "articleImage": "",
+        "articleTitle": "Activation of neuroendocrine responses in the crayfish Procambarus clarkii by white spot syndrome virus",
+        "articleTitlemuted":"Conference Paper" ,
+        "articledescription": "2011 Annual Meeting, the Fisheries Society of Taiwan\n(台灣水產年會論文發表會)",
+        "articlePDF":"article/2011 Annual Meeting, the Fisheries Society of Taiwan.pdf.pdf"
+      },
+      "article4": {
+        "articleImage": "",
+        "articleTitle": "Molecular analysis of Crustacean hyperglycemic hormones in crustaceans and the impact of pathogens on gene expression",
+        "articleTitlemuted":"Conference Paper" ,
+        "articledescription": "2010 Annual Meeting, the Fisheries Society of Taiwan\n(台灣水產年會論文發表會)",
+        "articlePDF":"article/2010 Annual Meeting, the Fisheries Society of Taiwan.pdf"
+      },
+      "article5": {
+        "articleImage": "",
+        "articleTitle": "Study on operation model of municipal wastewater by immobilized-sludge reactor",
+        "articleTitlemuted":"Conference Paper" ,
+        "articledescription": "2007 Environmental Pollution Control Assessment Seminar\n(環境污染控制評估研討會)",
+        "articlePDF":"article/Study_on_operation_model_of_municipal_wastewater_by_immobilized_sludge_reactor.pdf" 
+      },
+      "article6": {
+        "articleImage": "",
+        "articleTitle": "Neuroendocrine responses of a crustacean host to viral infection",
+        "articleTitlemuted":"Journal Article" ,
+        "articledescription": "Chi-Ying Lee, Ling-Jiun Lin, Yan-Jhou Chen, Yun-Shiang Chang., (2013). Neuroendocrine responses of a crustacean host to viral infection: effects of infection of white spot syndrome virus on the expression and release of crustacean hyperglycemic hormone in the crayfish Procambarus clarkii. Comparative Biochemistry and Physiology A ,164, pp327-332 (SCI).",
+        "articlePDF":"article/Neuroendocrine_responses_of_a_crustacean_host_to_viral_infection.pdf"
+      },
+      "article7": {
+        "articleImage": "PASS",
+        "articleTitle": "Crustacean hyperglycemic hormone structural variants, physiological function, and cellular mode of action",
+        "articleTitlemuted":"Journal Article" ,
+        "articledescription": "Chi-Ying Lee, Kuo-Wei Tsai, Wei-Shiun Tsai, Shao-Yen Huang, Yan-Jhou Chen.,  (2013). Crustacean hyperglycemic hormone: structural variants, physiological function, and cellular mode of action. Journal of Marine Science and Technology (EI).",
+        "articlePDF":"article/Crustacean hyperglycemic hormone structural variants, physiological function, and cellular mode of action.pdf"
+      }
+   
+  }
+
+

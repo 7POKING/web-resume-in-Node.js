@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- 因為html下方匯出現奇怪的空白，用height強制弄掉 -->
+
+<!-- https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/37389818#overview -->
+<!-- 可將整個網頁變成暗色版  https://getbootstrap.com/docs/5.3/customize/color-modes/-->
+<!-- <html lang="en" data-bs-theme="dark">-->
+
+<html lang="en">
+
+
+<head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- google字型 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet">
+  <!-- dicee game 字型 -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <!-- 重複? -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+
+  <!-- 使用Boostraps 5.0.1版-->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+  <!-- 使用Boostraps 5.0.2版-->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <!-- 使用5.1.3版 -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <!-- 使用Boostraps 5.2.3版-->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  <!-- 使用Boostraps 5.3.2版-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <!--  iconScont 的連接-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- fontawesome icon的連接 使用說明 https://fontawesome.com/ -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <script src="https://kit.fontawesome.com/0289ed5c22.js" crossorigin="anonymous"></script>
+  <!-- 引入 jQuery 和 Bootstrap 的 JavaScript 文件 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- navbar 向下捲動畫面隱藏，往上捲動顯示 -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar-title").style.top = "0";
+      } else {
+        document.getElementById("navbar-title").style.top = "-120px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+
+
+  <title>YCC</title>
+</head>
+
+<body>
+
+  <!-- -------------------------------------------- -->
+
+  <section>
+    <div id="navbar-title">
+      <section class="colored-section" id="title">
+        <!--設定全數對齊 -->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">   -->
+            <a class="navbar-brand" href="/">
+              <!-- 增加圖案  class="d-inline-block align-text-bottom" 可以調整對齊位置 https://getbootstrap.com/docs/4.0/utilities/vertical-align/-->
+              <img src="http://localhost:7000/images/astronaut.png" alt="title-image" width="25" height="35"
+                class="d-inline-block align-midle">
+              YC Chen
+            </a>
+            <!-- 增加 toggler 按鈕，在頁面不是navbar-expand-lg時可以變成縮起來的樣式 data-bs-targe=連結縮起來的<div></div>中的 id -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 連結的 div -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+              <!-- CSS 5.0.1 以上版本 navbar 靠右 https://getbootstrap.com/docs/5.1/utilities/flex/#auto-margins -->
+              <ul class="navbar-nav ms-auto">
+
+
+                <!-- 用href=#section 跳到要的位置-->
+                <li class="nav-item">
+                  <a class="nav-link" href="/#skills">Skill</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/#experience">Experience</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/#articles">Articles</a>
+                </li>
+
+                <!-- 新增下拉式選單 dropdown功能 加入 profile -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Portfolio
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                    <li><a class="dropdown-item" href="/calculatorBMI"><i class="fa-solid fa-weight-scale"></i>
+                        Calculator BMI</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-drum"></i> Drum Kit</a></li>
+                    <li><a class="dropdown-item" href="/diceeGame">🎲 Dicee Game</a></li>
+                    <!-- 讓icon骰子一直轉  網站新增按鈕可以flash網頁-->
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-game-board-simple"></i><i
+                          class="fa-solid fa-border-all"></i> Simon Game</a></li>
+                    <li><a class="dropdown-item" href="#">🔦 Keeper</a></li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Python Portfolio</a></li>
+              </ul>
+
+              <!-- 新增下拉式選單 dropdown功能 加入 Blog -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                  <li><a class="dropdown-item" href="/blogHome">My Blog</a></li>
+                  <li><a class="dropdown-item" href="/blogAbout">About me</a></li>
+                  <li><a class="dropdown-item" href="/blogCompose">Compose</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/#testimonials"> Photos</a>
+              </li>
+
+              <li class="nav-item">
+              <a class="nav-link" href="/#footer">Contact</a>
+              </li>
+            </div>
+          </nav>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+  </section>
+
+  <body class="for_navbar_padding">
+
+
+
+    <!-- 
+  window.onscroll = function () { myFunction() };
+
+  var navbar = document.getElementById("navbar-title");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  var prevScrollpos = window.pageYOffset; -->

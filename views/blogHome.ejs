@@ -1,0 +1,21 @@
+<%-include('partials/header') %>
+<section class="white-section" id="blog">
+  <div class="container_fluid">
+<h1 class = "blogtitle">Home</h1>
+<p><%= startingContent %></p>
+
+<% postlists.forEach((element) => {%>
+   <h1 class ="blogtitle"><%= element.title %></h1>
+   <p>
+     <%= element.content.substr(0,100)+"..." %>
+     <a href="http://localhost:7000/blogPost/<%= element.title %>">Read More</a>
+   </p>
+
+<% });%>
+
+
+
+</div>
+</section>
+
+<%-include('partials/footer') %>
