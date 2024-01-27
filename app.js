@@ -34,6 +34,7 @@ const lowerCase = require("lodash.lowercase"); //lodash 用於將空格等符號
 const WordCloud = require("node-wordcloud"); //用於產生字雲
 const { createCanvas } = require("canvas");
 const { Script } = require("vm");
+const PORT = process.env.PORT || 7000;
 
 bodyParser = require("body-parser");
 app.set("view engine", "ejs"); // 使用ejs套件 說明文件: https://github.com/mde/ejs/wiki/Using-EJS-with-Express
@@ -360,8 +361,8 @@ app.post("/blogCompose", (req, res) => {
   // res.render("blogCompose",{kindOfDay: dayDate,});
 });
 
-app.listen("7000", (req, res) => {
-  console.log("Server is running on port 7000");
+app.listen(PORT, (req, res) => {
+console.log(`Server is running on port ${PORT}`);
 });
 
 //非ES6版本
